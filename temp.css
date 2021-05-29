@@ -1,0 +1,76 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-shadow: 3px 3px white;
+}
+p{
+    border: 2px solid blue;
+}
+img{
+    border-color: black;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: 1.0;
+    margin-bottom: 60px;
+    border-radius: 20px;
+}
+a{
+    font-size: 30px;
+}
+.subaru, .silvia,.skyline{
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    width: 300px;
+}
+<!--
+
+table,th,td{
+    /* border:2px solid black; */
+    /* padding: 2px; */
+    /* border-collapse: collapse; */
+    /* text-align: center; */
+    /* border-spacing: 5px; */
+}
+.cars1{
+    padding: 5px;
+    border:5px dotted black;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+.cars2{
+    padding: 5px;
+    border:5px dotted black;
+    border-collapse: collapse;
+    font-size: 20px;
+    background-image: linear-gradient(blue,purple, cyan);
+}
+
+.cars1list{
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+.cars2list{
+    font-family: fantasy;
+    font-size: 20px;
+    text-shadow: 2px blueviolet;
+}
+.carslist{
+    font-size: 50px;
+    font-style: italic;
+}
+
+.intro,td{
+    border:4px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+body{
+    background-color: green;
+}

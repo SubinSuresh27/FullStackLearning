@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="temp.css">
+        <title>
+            Fast and Furious Fanpage
+        </title>
+        <style>
+            
+            a{
+                border-radius: 20px;
+                padding: 5px;
+            }
+            a:link{
+                color:white;
+                background-color: green;
+                text-decoration: none;
+
+            }
+            a:visited{
+                color: red;
+                background-color: purple;
+                text-decoration: none;
+            }
+            a:hover{
+                color:white;
+                background-color: darkgreen;
+                text-decoration: none;
+            }
+            a:active{
+                color:yellow;
+                background-color: blue;
+                text-decoration: underline;
+            }
+            button{
+                border-radius: 20px;
+                font-size: 25px;
+                padding: 5px;
+                background-color: red;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <table class="intro">
+            <td>
+                <img src="logo.png" alt="fast and furious logo " style="align-items: center;">
+            </td>
+            <td>
+                <h1>Fast and Furious Fanpage</h1>
+            </td>
+        </table>
+        <h1>This is a heading using h1 tag</h1>
+        <h2>This is a heading using h2 tag</h2>
+        <p>This is a paragraph made using a p tag</p>
+        <h1>This is a link made using href tag</h1>
+        <a href="https://www.w3schools.com/">Web Development Tutorials</a>
+        <h1>This is an image shown using img tag</h1>
+        <img src="supra.jpg" alt="a cool supra" width="450" height="450">
+        <h1 style="color:purple;">This is a an example of stle attribute where I changed the color of text</h1>
+        <pre>
+            This is an example to show how pre tag works
+               
+            pre stands for          preformatted
+            Spaces and white spaces are preserved
+
+            The text is hwon in a different font
+
+            This   is like a    poem
+        </pre>
+        <h1 style="background-color: gray; color:green; font-family: monospace;font-size: 300%;text-align: center;">This is a green text in a gray background aligned in center with monospace as font family with 400% as font size</h1>
+        <h1>This is how
+            <b>bold</b>,
+            <i>italics</i>,
+            <strong>strong</strong>,
+            <em>emphasize</em>,
+            <mark>mark</mark>,
+            <small>small</small>,
+            <del>delete</del>,
+            <ins>inserted</ins>,
+            <sub>subscript</sub>;
+            <sup>superscript</sup>
+            tags work.
+        </h1>
+        <h1> This is how
+            <blockquote>blockquote</blockquote>,
+            <q>short quotation</q>,
+            <abbr>abbreviation</abbr>,
+            <address>address</address>,
+            <cite>cite</cite>,
+            <bdo>bi-directional override</bdo>
+            tags work.
+        </h1>
+        <h1 style="background-color: gray;color:rgb(225,0,0);border:10px#000000;">This is a text with red color specified in rgb values, on a gray background specified in word with a black border specified in hex values</h1>
+        <h1>CSS</h1>
+        <h2>Inline CSS</h2>
+        <h1 style="font-style: italic;">This is an example of inline CSS</h1>
+        <p style="font-size: 25px;">Inline CSS is implemented by specifying the style within the same tag</p>
+        <h2>Internal CSS</h2>
+        <p>It is defined in the head tag of the html document 
+        As you can see, the background color of body is changed
+        </p>
+        <h1>External CSS</h1>
+        <P>It is used to style many html pages at once.
+            We write a seperate css code which contains all the styles and they are linked in the head tag using href.
+            The whole text is centered using external css.
+            We added a shadow to every h1 tag.
+            Every paragraph tag got a blue solid border around them.
+            And we added 30px padding to the image.
+        </P>
+        <h1>Links</h1>
+        <a href="https://www.w3schools.com/" target="_blank">Open link in new tab</a><br><br>
+        <a href="https://www.w3schools.com/" target="_self">Open link in sam tab</a><br><br>
+        <a href="https://www.w3schools.com/" target="_parent">Open link in parent frame</a><br><br>
+        <a href="https://www.w3schools.com/" target="_top">Open document in full body of window</a><br><br>
+        <h3>Image Link</h3>
+        <a href="https://www.w3schools.com/">
+            <img src="supra.jpg" alt="supra image" style="height:50px; width:50px">
+        </a>
+        <a href="mailto:someone@example.com">Link to email address</a>
+        <button onclick="document.location='https://www.w3schools.com/'">Button Link</button>
+        <a href="https://www.w3schools.com/" title="Title Link">Title Link</a>
+        <h1>Different Colors for links</h1>
+        <h1>Gifs</h1>
+        <img src="duck.gif" alt="Dancing duck">
+        <h1>Image Map</h1>
+        <img src="shape.jpg" alt="image with shapes" usemap="#workmap">
+        <map name="workmap">
+            <area shape="poly" coords="64,39,101,103,24,104" alt="traingle" href="https://en.wikipedia.org/wiki/Triangle" target="_blank">
+            <area shape="rect" coords="27,155,104,233" alt="square" href="https://en.wikipedia.org/wiki/Square" target="_blank">
+            <area shape="circle" coords="231,67,37" alt="circle" href="https://en.wikipedia.org/wiki/Circle" target="_blank">
+            <area shape="rect" coords="163,170,298,229" alt="rectangle" href="https://en.wikipedia.org/wiki/Rectangle" target="_blank">
+        </map>
+        <h1>Picture Element</h1>
+        <picture>
+            <source media="(min-width:850px)" srcset="subaru.jpg">
+            <source media="(min-width:665px)" srcset="skyline.jpg">
+            <img src="silvia.jpg">
+        </picture>
+        <h1>HTML Tables</h1>
+        <table style="width:100%">
+            <tr>
+                <th>Image</th>
+                <th>Manufacturer</th>
+                <th>Model</th>
+            </tr>
+            <tr>
+                <td>><img class="subaru" src="subaru.jpg" alt="subaru"></td>
+                <td>Subaru</td>
+                <td>Impreza WRX</td>
+            </tr>
+            <tr>
+                <td>><img class="silvia" src="silvia.jpg" alt="silvia"></td>
+                <td>Nissan</td>
+                <td>Silvia 1975</td>
+            </tr>
+            <tr>
+                <td>><img class="skyline" src="skyline.jpg" alt="skyline"></td>
+                <td>Nissan</td>
+                <td>Skyline R33</td>
+            </tr>
+        </table>
+        <h1>Another Table</h1>
+        <table class="cars1" style="width:100%">
+            <tr>
+              <th>Manufacturer</th>
+              <th colspan="2">Models</th>
+            </tr>
+            <tr>
+              <td>Nissan</td>
+              <td>Silvia</td>
+              <td>Skyline</td>
+            </tr>
+            <tr>
+                <td>Lamborghini</td>
+                <td>Centenario</td>
+                <td>Gallardo</td>
+              </tr>
+              <tr>
+                <td>Mitsubishi</td>
+                <td>Lancer</td>
+                <td>Galliant</td>
+              </tr>
+          </table>
+          <br>
+          <br>
+          <table class="cars2" style="width:100%">
+            <tr>
+              <th>Movie:</th>
+              <th>Cars</td>
+            </tr>
+            <tr>
+              <td rowspan="5">Fast and Furious:</td>
+              <td>Mitsubishi Eclipse</td>
+            </tr>
+            <tr>
+              <td>Nissan Silvia</td>
+            </tr>
+            <tr>
+                <td>Toyota Supra</td>
+              </tr>
+              <tr>
+                <td>Nissan Skyline R33</td>
+              </tr>
+              <tr>
+                <td>Acura Integra</td>
+              </tr>
+              <td rowspan="4">Fast and Furious Tokyo Drift:</td>
+              <td>Nissan Silvia</td>
+            </tr>
+            <tr>
+              <td>Ford Mustang Fastback</td>
+            </tr>
+            <tr>
+                <td>Mazda RX7</td>
+              </tr>
+              <tr>
+                <td>Mitsubishi Lancer Evolution 8</td>
+              </tr>
+              <td rowspan="3">2 Fast 2 Furious:</td>
+              <td>Nissan Skyline GTR R34</td>
+            </tr>
+            <tr>
+              <td>Mitsubishi Lancer Evolution 7</td>
+            </tr>
+            <tr>
+                <td>Mitsubishi Spyder</td>
+              </tr>
+          </table>
+          <br>
+          <h1>HTML Lists</h1>
+          <ol class="carslist" style="list-style-type: lower-roman;">
+            <li>Fast and Furious</li>
+            <ul class="cars1list" style="list-style-type: round;">
+                <li>Nissan Silvia</li>
+                <li>Mitsubishi Eclipse</li>
+                <li>Toyota Supra</li>
+           </ul>
+           <li>2 Fast 2 Furious</li>
+           <ul class="cars2list" style="list-style-type: round;">
+            <li>Nissan Skyline</li>
+            <li>Mitsubishi Spyder</li>
+            <li>Mitsubishi Lancer</li>
+       </ul>
+        </ol>
+        
+    </body>
+</html>

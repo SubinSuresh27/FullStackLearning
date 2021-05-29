@@ -1,0 +1,265 @@
+nav,header,footer{
+    display:block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    font-size: 18px;
+    font-family: 'Merriweather';
+}
+
+article p{
+    font-size: 20px;
+    padding: 18px;
+    line-height: 25px;
+    word-spacing: 7px;
+}
+.container{
+    width:100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
+
+/* ################# Navigation Bar #################### */
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul{
+    background-color:  #7575a3;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase ;
+    color: black;
+    font-family: 'Merriweather', serif;
+}
+ul.topnav li a:hover{
+    background-color: #33334d;
+    color:white;
+}
+
+ul.topnav li.dropdown{
+    display: none;
+}
+
+/* ############## Custom Styles ############# */
+
+
+#section-1-gradient{
+    background: #8585ad;
+    background: -webkit-linear-gradient(#3399ff,#0059b3);
+    background: -moz-linear-gradient(#3399ff,#0059b3);
+    background: -o-linear-gradient(#3399ff,#0059b3);
+    background: linear-gradient(#3399ff,#0059b3);
+}
+
+div.box{
+    margin: 24px;
+    border-radius: 10px;
+    padding: 36px 24px 40px 24px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px 0 rgba(0,0,0,0.1);
+}
+div.slipeicon img{
+    width: 100%;
+}
+div.slopeicon img{
+     margin: auto;
+     border-radius: 7px;
+     display: block;
+     box-shadow: -2px/*H*/ -2px/*V*/ 20px/*Blur*/ 2px/*Shadow*/ rgba(0 /*Shadow*/,0 /*Background*/,0 /*Box*/,.15/*Opacity*/), 2px 2px 17px 2px rgba(0,0,0,1);
+}
+
+button{
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    color:white;
+    background-color: #7575a3;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+.col-6-leftside-col{
+    margin-left: 30%;
+}
+button.learnmore{
+    display: block;
+    margin: auto;
+
+}
+
+div.rightside-col{
+    margin-left: 15%;
+}
+h1.large{
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 80px;
+}
+
+h1.section2header{
+    font-size: 40px;
+    text-align: center;
+}
+
+form h2{
+    color: white;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding:5px;
+    border-radius: 8px;
+}
+div.icon{
+    width: 100%;
+}
+
+footer.footsy{
+    background-color: #3d3d5c;
+    padding-left: 10%;
+}
+footer.footsy h1{
+    color: white;
+    font-size: 35px;
+}
+footer.footsy ul{
+    list-style: none;
+   text-align: left;
+   padding-left: 0;
+}
+
+footer.footsy ul li{
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+}
+/* ############# Mobile Code ############# */
+
+@media screen and (max-width:1024px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdown{
+        display: block;
+        float:right;
+    }
+
+    ul.topnav.responsive li.dropdown{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    article p{
+        font-size: 15px;
+    }
+
+    .col-6, .col-4, .col-7,.col-5{
+        width: 100%;
+        margin: 0;
+    }
+
+    div.mobilestack{
+        width: 50%;
+        display: block;
+    }
+
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+
+    div.slopeicon{
+        margin: 10px;
+    }
+    div.leftside-col,div.rightside-col{
+        margin: 15px;
+    }
+    input[type="text"]{
+        width: 350px;
+    }
+    .videocontainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+}
